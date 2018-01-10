@@ -8,66 +8,20 @@
 
 		<script>
 
-d3.tsv("data.tsv", function(error, data) {
-  if (error) throw error;
+var svg =d3 .select("svg")
+	.ttr("width", width)
+	.attr("height",height)
 
-  data.forEach(function(d) {
-    d.access = +d.access;
-    d.SCORE = +d.SCORE;
-  });
+var circle = svg.append("circle") . Array[1]
+	circle
+		.attr("cx", 200)
+		.attr("cy", 200)
+		.attr("r", 40); 
 
-  x.domain(d3.extent(data, function(d) { return d.access; })).nice();
-  y.domain(d3.extent(data, function(d) { return d.SCORE; })).nice();
 
-  svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis)
-    .append("text")
-      .attr("class", "label")
-      .attr("x", width)
-      .attr("y", -6)
-      .style("text-anchor", "end")
-      .text("Percentage of population with access to elecricity");
+  
 
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-    .append("text")
-      .attr("class", "label")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("ClimateScope score")
-
-  svg.selectAll(".dot")
-      .data(data)
-    .enter().append("circle")
-      .attr("class", "dot")
-      .attr("r", 3.5)
-      .attr("cx", function(d) { return x(d.access); })
-      .attr("cy", function(d) { return y(d.SCORE); })
-      .style("fill", function(d) { return color(d.Region); });
-
-  var legend = svg.selectAll(".legend")
-      .data(color.domain())
-    .enter().append("g")
-      .attr("class", "legend")
-      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-  legend.append("rect")
-      .attr("x", width - 18)
-      .attr("width", 18)
-      .attr("height", 18)
-      .style("fill", color);
-
-  legend.append("text")
-      .attr("x", width - 24)
-      .attr("y", 9)
-      .attr("dy", ".35em")
-      .style("text-anchor", "end")
-      .text(function(d) { return d; });
+  
 
 });
 </script>
