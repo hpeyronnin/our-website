@@ -6,28 +6,24 @@
 </head>
     <body>
 
-<h1>The energy access gap and the perceived risk</h1>
+		<script>
 
-<script>
-
-d3 .select("body") 
-	.append("p") 
-	.text("Exploring that cross requires visual aid") ;
+				
 
 
-var dataArray = (20, 40,50) ;
+				var dataArray = [20, 40,50] ;
 
-var canvas = d3.select("body")
-				.append("svg")
-				.attr("width", 500)
-				.attr("height" ,500)  
-var bars = canvas .selectAll("rect")
-				  .data(dataArray)
-				  .enter()
-				       .append("rect")	
-				       attr("width", function(d) {return d; } )
-				       attr("height", 50)
-				       attr("y", function(d, 1) { return 1* 100});
+				var canvas = d3.select("body")
+								.append("svg")
+								.attr("width", 500)
+								.attr("height" ,500)  
+				var bars = canvas .selectAll("rect")
+								  .data(dataArray)
+								  .enter()
+								       .append("rect")	
+								       attr("width", function(d) {return d; } )
+								       attr("height", 50)
+								       attr("y", function(d, 1) { return 1* 100});
 </script>
 
        
