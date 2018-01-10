@@ -1,0 +1,17 @@
+body {
+  font: 15px sans-serif;
+  background-color: rgb(245,245,245);
+  color: rgb(75,0,130);
+  padding: 40px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
