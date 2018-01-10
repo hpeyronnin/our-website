@@ -1,6 +1,6 @@
 body {
   font: 7px sans-serif;
-  background-color: grey // {r: 70, g: 130, b: 180, opacity: 1};
+  background-color: grey // {r: 70, g: 130, b: 180, opacity: 30};
 }
 
 .axis path,
