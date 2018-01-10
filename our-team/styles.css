@@ -1,6 +1,8 @@
 body {
   font: 7px sans-serif;
-  background-color: lightgrey-cmyk(0, 81%,81%, 30%);
+  background-color: background-color: #F08080;
+  color: rgb(75,0,130);
+  padding: 20px;
 }
 
 .axis path,
