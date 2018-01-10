@@ -1,56 +1,30 @@
-COUNTRY	Region	SCORE	access
-China	Asia	 2.233 	100
-Brazil	Latin America and Caribbean	 2.173 	99.650247
-South Africa	Africa	 1.924 	86
-India	Asia	 1.854 	79.16925812
-Chile	Latin America and Caribbean	 1.790 	100
-Uruguay	Latin America and Caribbean	 1.753 	99.657085
-Kenya	Africa	 1.726 	36
-Mexico	Latin America and Caribbean	 1.570 	99.172928
-Indonesia	Asia	 1.521 	97.01
-Uganda	Africa	 1.516 	20.4
-Peru	Latin America and Caribbean	 1.500 	92.919989
-Costa Rica	Latin America and Caribbean	 1.448 	99.359291
-Vietnam	Asia	 1.412 	99.2
-Nicaragua	Latin America and Caribbean	 1.369 	81.853073
-Pakistan	Asia	 1.361 	97.53484344
-Colombia	Latin America and Caribbean	 1.330 	97.790938
-Nepal	Asia	 1.310 	84.9
-Bangladesh	Asia	 1.264 	62.4
-Ethiopia	Africa	 1.249 	27.2
-Argentina	Latin America and Caribbean	 1.242 	100
-Tanzania	Africa	 1.235 	15.50144958
-Nigeria	Africa	 1.233 	57.65213776
-Rwanda	Africa	 1.203 	19.8
-Dominican Republic	Latin America and Caribbean	 1.160 	98.470979
-Honduras	Latin America and Caribbean	 1.155 	88.653773
-Ghana	Africa	 1.150 	78.3
-El Salvador	Latin America and Caribbean	 1.122 	95.125416
-Panama	Latin America and Caribbean	 1.114 	91.59696198
-Guatemala	Latin America and Caribbean	 1.097 	85.494371
-Zambia	Africa	 1.065 	27.9
-Sri Lanka	Asia	 1.048 	92.19124603
-Belize	Latin America and Caribbean	 0.978 	92.45124817
-Ecuador	Latin America and Caribbean	 0.961 	98.976067
-Malawi	Africa	 0.917 	11.9
-Liberia	Africa	 0.913 	9.140634537
-Bolivia	Latin America and Caribbean	 0.912 	90.038729
-Senegal	Africa	 0.889 	61
-Democratic Republic of Congo	Africa	 0.835 	13.5
-Jamaica	Latin America and Caribbean	 0.803 	97.09738922
-Mozambique	Africa	 0.786 	21.21998405
-Barbados	Latin America and Caribbean	 0.786 	100
-Myanmar	Asia	 0.777 	52
-Zimbabwe	Africa	 0.764 	32.3
-Sierra Leone	Africa	 0.760 	13.09699154
-Haiti	Latin America and Caribbean	 0.729 	37.94010925
-Cote d'Ivoire	Africa	 0.690 	61.9
-Cameroon	Africa	 0.645 	56.8
-Botswana	Africa	 0.620 	56.48230362
-Guyana	Latin America and Caribbean	 0.602 	86.9
-Paraguay	Latin America and Caribbean	 0.590 	99.000716
-Trinidad & Tobago	Latin America and Caribbean	 0.539 	100
-Bahamas	Latin America and Caribbean	 0.527 	100
-Tajikistan	Asia	 0.481 	99.98976135
-Venezuela	Latin America and Caribbean	 0.323 	99.10779572
-Suriname	Latin America and Caribbean	 0.307 	100
+Country Name\tRegion\tKWH/Capita\tRenewable as % of Electical production
+Argentina\tLatin American  & Caribbean\t3052.381937\t2.49610647
+Bangladesh\tAsia\t310.3912261\t0.26680992
+"Bahamas\t The"\tLatin American  & Caribbean\t\t
+Belize\tLatin American  & Caribbean\t\t
+Bolivia\tLatin American  & Caribbean\t752.6870217\t2.295830954
+Brazil\tLatin American  & Caribbean\t2601.365506\t9.854190088
+Barbados\tLatin American  & Caribbean\t\t
+Botswana\tAfrica\t1748.615334\t0.042319086
+Chile\tLatin American  & Caribbean\t3911.649265\t9.84685088
+China\tAsia\t3927.0445\t4.057312851
+Cote d'Ivoire\tAfrica\t276.1485663\t0.844798455
+Cameroon\tAfrica\t280.6666791\t1.040161803
+"Congo\t Dem. Rep."\tAfrica\t108.5823312\t0
+Colombia\tLatin American  & Caribbean\t1289.569693\t3.147883295
+Costa Rica\tLatin American  & Caribbean\t1957.930248\t24.04815504
+Dominican Republic\tLatin American  & Caribbean\t1578.151662\t4.727292306
+Ecuador\tLatin American  & Caribbean\t1380.610286\t2.036450405
+Ethiopia\tAfrica\t69.71577388\t4.274570983
+Ghana\tAfrica\t354.714053\t0.030857055
+Guatemala\tLatin American  & Caribbean\t577.8858859\t23.4032634
+Guyana\tLatin American  & Caribbean\t\t
+Honduras\tLatin American  & Caribbean\t630.1355308\t11.45807415
+Haiti\tLatin American  & Caribbean\t38.96914873\t0
+Indonesia\tAsia\t811.9001839\t4.808470609
+India\tAsia\t805.5991906\t5.184100022
+Jamaica\tLatin American  & Caribbean\t1055.523469\t6.474296799
+Kenya\tAfrica\t166.7381869\t45.73341975
+Liberia\tAfrica\t\t
+Sri Lanka\tAsia\t531.2695585\t2.672337694
