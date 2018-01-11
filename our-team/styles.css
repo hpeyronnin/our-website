@@ -1,12 +1,22 @@
 h1 {
   font-size: 60px;
   text-align: center;
+  font-family: 'Bungee';
+}
+
+h2  {
+  text-align: center;
+}
+
+html  {
+  background-image: url(https://www.renewablechoice.com/wp-content/uploads/2017/04/view-of-wind-and-solar-farm-in-desert.jpg);
+  background-repeat: repeat;
 }
 
 body {
   width: 1000px;
   margin: 0 auto;
-  background-color: #7FFFD4;
+  background-color: rgba(0, 255, 125, 0.85);
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 }
@@ -18,19 +28,14 @@ body {
   shape-rendering: crispEdges;
 }
 
-ul { 
-    display: block;
-    list-style-type: disc;
-    margin-top: 1em;
-    margin-bottom: 1 em;
-    margin-left: 8em;
-    margin-right: 0;
-    padding-left: 40px;
-    font-size: 50px;
+
+li{
+  font-size: 50px;
+  display: inline-block;
 }
 
-svg {
-
+ul {
+text-align: center;
 }
 
 .dot {
@@ -47,7 +52,8 @@ svg {
 }
 
 #analysis {
-  color: blue;
+  font-size: 40px;
+  font-family: "Averia+Serif+Libre"
 }
 
 /* Creates a small triangle extender for the tooltip */
