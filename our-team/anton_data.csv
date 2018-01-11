@@ -1,0 +1,56 @@
+Country,Region,Kwh_Capita,Renewable
+Argentina,Latin American  & Caribbean,3052.381937,2.49610647
+Bangladesh,Asia,310.3912261,0.26680992
+"Bahamas, The",Latin American  & Caribbean,,
+Belize,Latin American  & Caribbean,,
+Bolivia,Latin American  & Caribbean,752.6870217,2.295830954
+Brazil,Latin American  & Caribbean,2601.365506,9.854190088
+Barbados,Latin American  & Caribbean,,
+Botswana,Africa,1748.615334,0.042319086
+Chile,Latin American  & Caribbean,3911.649265,9.84685088
+China,Asia,3927.0445,4.057312851
+Cote d'Ivoire,Africa,276.1485663,0.844798455
+Cameroon,Africa,280.6666791,1.040161803
+"Congo, Dem. Rep.",Africa,108.5823312,0
+Colombia,Latin American  & Caribbean,1289.569693,3.147883295
+Costa Rica,Latin American  & Caribbean,1957.930248,24.04815504
+Dominican Republic,Latin American  & Caribbean,1578.151662,4.727292306
+Ecuador,Latin American  & Caribbean,1380.610286,2.036450405
+Ethiopia,Africa,69.71577388,4.274570983
+Ghana,Africa,354.714053,0.030857055
+Guatemala,Latin American  & Caribbean,577.8858859,23.4032634
+Guyana,Latin American  & Caribbean,,
+Honduras,Latin American  & Caribbean,630.1355308,11.45807415
+Haiti,Latin American  & Caribbean,38.96914873,0
+Indonesia,Asia,811.9001839,4.808470609
+India,Asia,805.5991906,5.184100022
+Jamaica,Latin American  & Caribbean,1055.523469,6.474296799
+Kenya,Africa,166.7381869,45.73341975
+Liberia,Africa,,
+Sri Lanka,Asia,531.2695585,2.672337694
+Mexico,Latin American  & Caribbean,2090.175944,4.643511025
+Myanmar,Asia,216.7776086,0
+Mozambique,Africa,462.6202881,0
+Malawi,Africa,,
+Nigeria,Africa,144.4799245,0
+Nicaragua,Latin American  & Caribbean,580.4791722,45.00450045
+Nepal,Asia,139.1436806,0.184356071
+Pakistan,Asia,471.0415689,0.377000142
+Panama,Latin American  & Caribbean,2062.763545,1.593625498
+Peru,Latin American  & Caribbean,1307.510966,3.433127595
+Paraguay,Latin American  & Caribbean,1563.505329,0
+Rwanda,Africa,,
+Senegal,Africa,223.4961633,1.769911504
+Sierra Leone,Africa,,
+El Salvador,Latin American  & Caribbean,939.1533991,32.09063153
+Suriname,Latin American  & Caribbean,3631.864041,0
+Tajikistan,Asia,1479.777274,0
+Trinidad and Tobago,Latin American  & Caribbean,7134.034654,0
+Tanzania,Africa,99.16747374,0.643190224
+Uganda,Africa,,
+Uruguay,Latin American  & Caribbean,3067.951126,16.75505342
+"Venezuela, RB",Latin American  & Caribbean,2657.622338,0
+Vietnam,Asia,1439.15555,0.103610029
+South Africa,Africa,4228.860726,0.99931455
+Zambia,Africa,707.1902175,0
+Zimbabwe,Africa,536.9954921,1.4366956
