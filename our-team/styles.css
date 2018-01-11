@@ -1,8 +1,14 @@
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
 body {
-  font: 15px sans-serif;
-  background-color: rgb(245,245,245);
-  color: rgb(75,0,130);
-  padding: 40px;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #7FFFD4;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
 }
 
 .axis path,
@@ -12,6 +18,54 @@ body {
   shape-rendering: crispEdges;
 }
 
+ul { 
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 8em;
+    margin-right: 0;
+    padding-left: 40px;
+    font-size: 50px;
+}
+
+svg {
+
+}
+
 .dot {
   stroke: #000;
+}
+
+.d3-tip {
+  line-height: 1;
+  font: 14px sans-serif;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: rgb(185, 185, 185);
+  border-radius: 2px;
+}
+
+#analysis {
+  color: blue;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
 }
