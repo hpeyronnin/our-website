@@ -62,7 +62,7 @@ d3.csv('./anton_data.csv', function loadCallback(error, data) {
                   .attr("transform", "rotate(-90)") // although axis is rotated, text is not
                   .attr("y", 15) // y-offset from yAxis, moves text to the RIGHT because it's rotated, and positive y is DOWN
                   .style("text-anchor", "end")
-                  .text("Kwh per Capita");
+                  .text("Kwh per Capita Consumption");
 
               // Add the tooltip container to the vis container
               // it's invisible and its position/contents are defined during mouseover
