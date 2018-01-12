@@ -68,4 +68,4 @@
     }
   
     d3.csv("CountryCode.csv", countryCodeRow, {});
-    d3.csv("DependencyRatio.csv", row, render);
+    d3.csv("CountryRatio.csv", row, render);
