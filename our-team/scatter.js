@@ -26,17 +26,26 @@ var svg = d3.select("body").append("svg")
 .append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
+var tip = d3.tip()
+    .attr('class', 'd3-tip')
+    .offset([-10, 0])
+    .html(function(d) {
+      return "<div><span>Category:</span> <span style='color:white'>" + d.Country + "</span></div>" +          
+    })
+
+svg.call(tip);
+
 //get data
 
 d3.tsv("data2.tsv", function(error, data) {
 	if (error) throw error;
 
 	data.forEach(function(d) {
-		d.percentpopnoaccess = +d.percentpopnoaccess;
+		d.access = +d.access;
 		d.Score = +d.Score;
 	});
 
-	x.domain(d3.extent(data, function(d) { return d.percentpopnoaccess; })).nice();
+	x.domain(d3.extent(data, function(d) { return d.access; })).nice();
 	y.domain(d3.extent(data, function(d) { return d.Score; })).nice();
 
 //draw graph 
@@ -50,7 +59,7 @@ d3.tsv("data2.tsv", function(error, data) {
 			.attr("x", width)
 			.attr("y", -6)
 			.style("text-anchor", "end")
-			.text("Percent of population with no elecricity");
+			.text("Percentage of population with elecricity");
 
 	svg.append("g")
 			.attr("class", "y axis")
@@ -71,7 +80,7 @@ d3.tsv("data2.tsv", function(error, data) {
 		.enter().append("circle")
 			.attr("class", "dot")
 			.attr("r", 9.5)
-			.attr("cx", function(d) { return x(d.percentpopnoaccess); })
+			.attr("cx", function(d) { return x(d.access); })
 			.attr("cy", function(d) { return y(d.Score); })
 			.style("fill", function(d) { return color(d.Region); }); 
 
