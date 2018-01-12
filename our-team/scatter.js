@@ -26,14 +26,6 @@ var svg = d3.select("body").append("svg")
 .append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
-var tip = d3.tip()
-    .attr('class', 'd3-tip')
-    .offset([-10, 0])
-    .html(function(d) {
-      return "<div><span>Category:</span> <span style='color:white'>" + d.Country + "</span></div>" +          
-    })
-
-svg.call(tip);
 
 //get data
 
