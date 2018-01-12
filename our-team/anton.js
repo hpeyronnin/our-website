@@ -8,9 +8,9 @@ d3.csv('./anton_data.csv', function loadCallback(error, data) {
 
           var makeVis = function(data) {
               // Common pattern for defining vis size and margins
-              var margin = { top: 20, right: 20, bottom: 30, left: 80 },
+              var margin = { top: 20, right: 20, bottom: 60, left: 100 },
                   width  = 960 - margin.left - margin.right,
-                  height = 500 - margin.top - margin.bottom;
+                  height = 450 - margin.top - margin.bottom;
 
               // Add the visualization svg canvas to the vis-container <div>
               var canvas = d3.select("#vis-container").append("svg")
@@ -49,7 +49,7 @@ d3.csv('./anton_data.csv', function loadCallback(error, data) {
                 .append("text")
                   .attr("class", "label")
                   .attr("x", width) // x-offset from the xAxis, move label all the way to the right
-                  .attr("y", -6)    // y-offset from the xAxis, moves text UPWARD!
+                  .attr("y", 40)    // y-offset from the xAxis, moves text UPWARD!
                   .style("text-anchor", "end") // right-justify text
                   .text("% Renewable of Total Electrical Output");
 
@@ -60,7 +60,7 @@ d3.csv('./anton_data.csv', function loadCallback(error, data) {
                 .append("text")
                   .attr("class", "label")
                   .attr("transform", "rotate(-90)") // although axis is rotated, text is not
-                  .attr("y", 15) // y-offset from yAxis, moves text to the RIGHT because it's rotated, and positive y is DOWN
+                  .attr("y", -60) // y-offset from yAxis, moves text to the RIGHT because it's rotated, and positive y is DOWN
                   .style("text-anchor", "end")
                   .text("Kwh per Capita Consumption");
 
