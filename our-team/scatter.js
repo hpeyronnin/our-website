@@ -1,3 +1,5 @@
+//define variables
+
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
 	width = 960 - margin.left - margin.right,
 	height = 500 - margin.top - margin.bottom;
@@ -25,6 +27,7 @@ var svg = d3.select("body").append("svg")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
 //get data
+
 d3.tsv("data2.tsv", function(error, data) {
 	if (error) throw error;
 
@@ -35,6 +38,8 @@ d3.tsv("data2.tsv", function(error, data) {
 
 	x.domain(d3.extent(data, function(d) { return d.percentpopnoaccess; })).nice();
 	y.domain(d3.extent(data, function(d) { return d.Score; })).nice();
+
+//draw graph 
 
 	svg.append("g")
 			.attr("class", "x axis")
@@ -69,7 +74,13 @@ d3.tsv("data2.tsv", function(error, data) {
 			.attr("cx", function(d) { return x(d.percentpopnoaccess); })
 			.attr("cy", function(d) { return y(d.Score); })
 			.style("fill", function(d) { return color(d.Region); }); 
-	
+
+//make dot size depend on % of world total
+
+
+//draw hover feature
+
+
 //draw legend
 
 	var legend = svg.selectAll(".legend")

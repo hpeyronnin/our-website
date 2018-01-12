@@ -1,11 +1,15 @@
 h1 {
   font-size: 60px;
   text-align: center;
-  font-family: 'Bungee';
+  font-family: 'Rajdhani';
 }
 
 h2  {
   text-align: center;
+}
+
+p{
+  font-size: 25px;
 }
 
 html  {
@@ -28,8 +32,8 @@ body {
   shape-rendering: crispEdges;
 }
 
-
 li{
+  text-align: center;
   font-size: 50px;
   display: inline-block;
 }
@@ -52,8 +56,8 @@ text-align: center;
 }
 
 #analysis {
-  font-size: 40px;
-  font-family: "Averia+Serif+Libre"
+  font-size: 80px;
+  font-family: "Rajdhani"
 }
 
 /* Creates a small triangle extender for the tooltip */
