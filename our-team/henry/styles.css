@@ -34,6 +34,7 @@ body {
 
 li{
   text-align: center;
+  font:'Rajdhani';
   font-size: 50px;
   display: inline-block;
 }
@@ -55,9 +56,10 @@ text-align: center;
   border-radius: 2px;
 }
 
-#analysis {
-  font-size: 80px;
-  font-family: "Rajdhani"
+.analysis {
+  font-size: 30px;
+  font-family: "Rajdhani";
+  text-align: center;
 }
 
 /* Creates a small triangle extender for the tooltip */

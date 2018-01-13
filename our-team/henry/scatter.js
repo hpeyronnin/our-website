@@ -62,7 +62,7 @@ d3.tsv("data2.tsv", function(error, data) {
 			.attr("y", 6)
 			.attr("dy", ".71em")
 			.style("text-anchor", "end")
-			.text("ClimateScope score")
+			.text("ClimateScope score");
 
 
 //draw dots
@@ -74,7 +74,8 @@ d3.tsv("data2.tsv", function(error, data) {
 			.attr("r", 9.5)
 			.attr("cx", function(d) { return x(d.access); })
 			.attr("cy", function(d) { return y(d.Score); })
-			.style("fill", function(d) { return color(d.Region); }); 
+			.style("fill", function(d) { return color(d.Region); })
+
 
 //make dot size depend on % of world total
 
