@@ -32,17 +32,27 @@ body {
   shape-rendering: crispEdges;
 }
 
-li{
+.list {
   text-align: center;
-  font:'Rajdhani';
-  font-size: 50px;
   display: inline-block;
 }
 
-ul {
-text-align: center;
+#chart  {
+  border: 1px solid black;
+  font-size: 20px;
+  font-family: "Rajdhani";
+  text-align: center;
 }
 
+.analysis {
+  font-size: 30px;
+  font-family: "Rajdhani";
+  text-align: center;
+}
+
+#head {
+  margin-bottom: 0px;
+}
 .dot {
   stroke: #000;
 }
@@ -54,12 +64,6 @@ text-align: center;
   background: rgba(0, 0, 0, 0.8);
   color: rgb(185, 185, 185);
   border-radius: 2px;
-}
-
-.analysis {
-  font-size: 30px;
-  font-family: "Rajdhani";
-  text-align: center;
 }
 
 /* Creates a small triangle extender for the tooltip */

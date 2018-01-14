@@ -5,50 +5,48 @@
 	<meta charset="utf-8">
 	<title>Scatterplot</title>
 	<link href="styles.css" rel="stylesheet" type="text/css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Rajdhani'
 	rel='stylesheet' type='text/css'>
 
 </head>
 <body>
 
-<h1>Expanding electricity access: Where can private sector participation make the biggest impact?</h1>
-<h2 class="analysis">To achieve UN Sustainable Development Goal 7, which aims to ensure universal access to clean, affordable electricity, private investment should target countries with low access to electricity and high investment potential.</h2>
+<h1>Expanding electricity access: Where can the private sector make the biggest impact?</h1>
+<h2 class="analysis">To achieve <a href = "https://sustainabledevelopment.un.org/sdg7">UN Sustainable Development Goal 7</a>, which aims for universal access to clean, affordable electricity, private investment should target countries with low access to electricity and attractive markets for clean energy investment.</h2>
 
+<script src="//d3js.org/d3.v3.min.js"></script>
 <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
-<script src"<script src="//d3js.org/d3.v3.min.js"></script>
 <script src="scatter.js" style='width: 500px; height: 500px;'></script>
 
-<p class="analysis">This chart uses data from the 2017 Bloomberg New Energy Finance <a href="http://global-climatescope.org/en/">ClimateScope</a> index, which ranks emerging markets based on attractiveness for clean energy investment, and 2014 World Bank <a href='https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?view=chart'> data</a> for electricity access.</p>
+<p id="chart">This chart uses data from the 2017 Bloomberg New Energy Finance <a href="http://global-climatescope.org/en/">ClimateScope</a> index, which ranks emerging markets based on attractiveness for clean energy investment, and 2014 World Bank <a href='https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?view=chart'> data</a> for electricity access. D3 code comes from <a href="https://bl.ocks.org/mbostock/3887118"> Mike Bostock </a> and <a href="http://bl.ocks.org/josiahdavis/a3534073492ca37b3682"> Josiah Davis</a>.</p>
 
 
-<h1> Which countries stand out?</h1>
+<h1 id = "head"> Which countries stand out?</h1>
 
-<ul>
-	<li> India </li>
+<div class = "list">
+	<h1> India </h1>
 		<p class="analysis">In India, 269.5 million people lack access to electricity, about 25% of the world total.</p>
+		<iframe width="800" height="500" src='https://www.youtube.com/embed/qIZOhK2Ywz0'></iframe>
 
-		<iframe width="800" height="500" src='https://www.youtube.com/embed/qIZOhK2Ywz0'></iframe><br><br><br>
-
-	<li> Nigeria </li>
+	<h1> Nigeria </h1>
 		<p class="analysis">In Nigeria, 74.7 million people lack access to electricity, about 7% of the world total. </p>
-		<iframe width="800" height="500" src='https://www.youtube.com/embed/tRqorTVqCXk'></iframe><br><br><br>
+		<iframe width="800" height="500" src='https://www.youtube.com/embed/tRqorTVqCXk'></iframe>
 
-	<li> Ethiopia </li>
+	<h1> Ethiopia </h1>
 		<p class="analysis">In Ethiopia, 70.8 million people lack access to electricity, about 6.7% of the world total.</p>
 
-	<li> Bangladesh </li>
+	<h1> Bangladesh </h1>
 		<p class="analysis">In Bangladesh, 59.9 million people lack access to electricity, 5.7 % of the world total.</p>
+		<iframe width="800" height="500" src='https://www.youtube.com/embed/_PaDsudWwFk'></iframe>
 
-	<li> Tanzania </li>
+	<h1> Tanzania </h1>
 		<p class="analysis">In Tanzania, 44.1 million people lack access to electricity, about 4.2% of the world total.</p>
-		<iframe width="800" height="500" src='https://www.youtube.com/embed/yfQxqA6F2U4'></iframe><br><br><br>
+		<iframe width="800" height="500" src='https://www.youtube.com/embed/yfQxqA6F2U4'></iframe>
 
-	<li> Uganda </li>
-		<p class="analysis">In Uganda, 30.9 million people lack access to electricity, about 2.9% of the world total.</p>
+	<h1> Kenya </h1>
+		<p class="analysis">In Kenya, 29.5 million people lack access to electricity, about 2.8% of the world total.</p>
 		
-</ul>
+</div>
 
 
 </body>

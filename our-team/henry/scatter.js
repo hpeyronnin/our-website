@@ -26,6 +26,17 @@ var svg = d3.select("body").append("svg")
 .append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
+var formatter = d3.format(",.0f")
+
+var tip = d3.tip()
+    .attr('class', 'd3-tip')
+    .offset([-10, 0])
+    .html(function(d) {
+      return "<div><span>Country:</span> <span style='color:white'>" + d.Country + "</span></div>" + 
+      "<div><span>Number without access:</span> <span style='color:white'>" + formatter(d.numnoccess) + "</span></div>";
+    })
+
+svg.call(tip);
 
 //get data
 
@@ -38,7 +49,7 @@ d3.tsv("data2.tsv", function(error, data) {
 	});
 
 	x.domain(d3.extent(data, function(d) { return d.access; })).nice();
-	y.domain(d3.extent(data, function(d) { return d.Score; })).nice();
+	y.domain([0, 2.6])
 
 //draw graph 
 
@@ -51,7 +62,7 @@ d3.tsv("data2.tsv", function(error, data) {
 			.attr("x", width)
 			.attr("y", -6)
 			.style("text-anchor", "end")
-			.text("Percentage of population with elecricity");
+			.text("Percentage of population with electricity");
 
 	svg.append("g")
 			.attr("class", "y axis")
@@ -71,16 +82,12 @@ d3.tsv("data2.tsv", function(error, data) {
 			.data(data)
 		.enter().append("circle")
 			.attr("class", "dot")
-			.attr("r", 9.5)
+			.attr("r", 5.5)
 			.attr("cx", function(d) { return x(d.access); })
 			.attr("cy", function(d) { return y(d.Score); })
 			.style("fill", function(d) { return color(d.Region); })
-
-
-//make dot size depend on % of world total
-
-
-//draw hover feature
+      		.on('mouseover', tip.show)
+      		.on('mouseout', tip.hide);
 
 
 //draw legend
@@ -89,7 +96,7 @@ d3.tsv("data2.tsv", function(error, data) {
 			.data(color.domain())
 		.enter().append("g")
 			.attr("class", "legend")
-			.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+			.attr("transform", function(d, i) { return "translate(-850," + i * 20 + ")"; });
 
 	legend.append("rect")
 			.attr("x", width - 18)
@@ -98,10 +105,10 @@ d3.tsv("data2.tsv", function(error, data) {
 			.style("fill", color);
 
 	legend.append("text")
-			.attr("x", width - 24)
+			.attr("x", width + 10)
 			.attr("y", 9)
 			.attr("dy", ".35em")
-			.style("text-anchor", "end")
+			.style("text-anchor", "front")
 			.text(function(d) { return d; });
 
 });
