@@ -1,0 +1,34 @@
+h1 {
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Rajdhani';
+}
+
+h2  {
+  text-align: center;
+  font-family: 'Rajdhani';
+  font-size: 40px;
+}
+
+p{
+  font-size: 25px;
+}
+
+html  {
+  background-image: url(https://www.renewablechoice.com/wp-content/uploads/2017/04/view-of-wind-and-solar-farm-in-desert.jpg);
+  background-repeat: repeat;
+}
+
+body {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(0, 255, 125, 0.85);
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+.analysis {
+  font-size: 30px;
+  font-family: "Rajdhani";
+  text-align: center;
+}
