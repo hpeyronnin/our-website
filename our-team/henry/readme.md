@@ -9,4 +9,8 @@
 9. Create tsv file
 10. Paste data into tsv file
 
-I performed steps 3-8 in order to add an additional parameter to the chart, which would scale the dot size of each country based on its proportion of the world's total number of people without energy access. For example, about 80% of India's population has access to electricity, which is relatively high compared to other countries. However, the 20% of India's population without access accounts for 25% of the world total, so I want the chart to communicate this information.  
+I performed steps 3-8 in order to add an additional parameter to the chart, which would scale the dot size of each country based on its proportion of the world's total number of people without energy access. For example, about 80% of India's population has access to electricity, which is relatively high compared to other countries. However, the 20% of India's population without access accounts for 25% of the world total, so I want the chart to communicate this information.
+
+Data Visualization:
+
+I chose a scatterplot (https://bl.ocks.org/mbostock/3887118) and modified in several ways. The biggest modification was to add a mouseover feature from another scatterplot (http://bl.ocks.org/josiahdavis/a3534073492ca37b3682), but I also re-labeled the axes, enlarged the dot size, and moved the legend. 
