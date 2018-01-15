@@ -2,7 +2,7 @@
     var series = [];
   
     function row(d) {
-        series.push([countryCode[d.Country_code], d["2050"]]);
+        series.push([countryCode[d.Country_code], d["2014"]]);
     }
   
     function render() {
@@ -11,16 +11,18 @@
         // colors should be uniq for every value.
         // For this purpose we create palette(using min/max series-value)
         var onlyValues = series.map(function (obj) {
-            return obj[1];
+            return +obj[1];
         });
-        var minValue = Math.min.apply(null, onlyValues),
-            maxValue = Math.max.apply(null, onlyValues);
 
+        
+        var minValue = d3.min(onlyValues),
+            maxValue = d3.max(onlyValues);
+        console.log(minValue, maxValue);
         // create color palette function
         // color can be whatever you wish
         var paletteScale = d3.scale.linear()
             .domain([minValue, maxValue])
-            .range(["#FFEFEF", "#3E000F"]); // blue color
+            .range(["#ffcccc", "#990000"]); // blue color
 
         // fill dataset in appropriate format
         series.forEach(function (item) { //
@@ -55,11 +57,29 @@
                     // tooltip content
                     return ['<div class="hoverinfo">',
                         '<strong>', geo.properties.name, '</strong>',
-                        '<br>Total Dependency Ratio: <strong>', data.numberOfThings, '</strong>',
+                        '<br>FDI: <strong>', d3.format(",.0f")(data.numberOfThings), '</strong>',
                         '</div>'].join('');
                 }
             }
         });
+
+        // Create Legend
+        var svg = d3.select("svg");
+
+        svg.append("g")
+          .attr("class", "legendLinear")
+          .attr("transform", "translate(20,400)");
+
+
+        var legendLinear = d3.legend.color()
+          .labelFormat(function(d) { return "$" + d3.format(",.0f")(d); })
+          .shapeWidth(30)
+          .orient('vertical')
+          .scale(paletteScale);
+
+        svg.select(".legendLinear")
+          .call(legendLinear);
+
 
     }
   
@@ -68,4 +88,4 @@
     }
   
     d3.csv("CountryCode.csv", countryCodeRow, {});
-    d3.csv("DependencyRatio.csv", row, render);
+    d3.tsv("fdi-codes.tsv", row, render);
